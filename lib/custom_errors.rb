@@ -9,9 +9,9 @@ class Person
     self.partner = person
     if person.class != Person
       raise BootyError
-    else 
+    else
     person.partner = self
-  end 
+  end
   end
   class BootyError < StandardError
    end
