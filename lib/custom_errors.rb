@@ -17,7 +17,3 @@ jay-z = Person.new("Jay-Z")
 beyonce.get_married(jay-z)
 # beyonce.get_married("Jay-Z")
 puts beyonce.name
-
-
-
-
