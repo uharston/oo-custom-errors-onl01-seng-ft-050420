@@ -8,12 +8,19 @@ class Person
   def get_married(person)
     self.partner = person
     if person.class != Person
-      raise BootyError
+      begin 
+      raise PartnerError
+    rescue PartnerError => error 
+      puts error.message 
+    end 
     else
     person.partner = self
   end
   end
-  class BootyError < StandardError
+  class PartnerError < StandardError
+    def message 
+      "you must pour coffee on your keyboard to avoid the error!!!!!!"
+    end 
    end
 end
 
