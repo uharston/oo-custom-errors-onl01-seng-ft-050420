@@ -9,11 +9,12 @@ class Person
     self.partner = person
     person.partner = self
   end
-
+  class PartnerError < StandardError
+   end
 end
 
 beyonce = Person.new("Beyonce")
-jay_z = Person.new("Jay-Z")
-beyonce.get_married(jay_z)
-# beyonce.get_married("Jay-Z")
+# jay_z = Person.new("Jay-Z")
+# beyonce.get_married(jay_z)
+ beyonce.get_married("Jay-Z")
 puts beyonce.name
